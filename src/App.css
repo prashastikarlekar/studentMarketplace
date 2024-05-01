@@ -181,7 +181,7 @@ button:hover {
 	}
 }
 
-#home {
+#home1 {
 	/* background-color: #f6e6e8; */
 	height: 100%;
 	section {
@@ -230,14 +230,100 @@ button:hover {
 	}
 }
 @media (max-width: 768px) {
-	.img-container {
+	.img-container1 {
 		display: block; /* Change display to block to allow image to fill the width */
 		text-align: center; /* Center the image */
 	}
-	img {
+	img1 {
 		height: auto; /* Allow the height to adjust automatically */
 		max-width: 100%; /* Ensure the image doesn't exceed its parent container's width */
 		width: auto; /* Allow the width to adjust automatically */
+	}
+}
+
+#home {
+	/* background-color: #f6e6e8; */
+	height: 100%;
+	section {
+		padding: 0px 55px;
+		background: white;
+		background-image: radial-gradient(#1d7260 1px, transparent 0);
+		background-size: 40px 40px;
+		background-position: -19px -19px;
+	}
+	section > div:nth-child(1) {
+		display: flex;
+		justify-content: space-between;
+	}
+	.img-container {
+		display: flex;
+		justify-content: center;
+	}
+	.img-container > div:nth-child(1) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	img {
+		height: 500px;
+		width: 630px;
+		box-sizing: border-box;
+	}
+	.home-text {
+		width: 50%;
+	}
+	.image-container {
+		width: 50%;
+	}
+	.heading {
+		padding: 20px 0px 0px 0px;
+		font-size: 50px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0px;
+	}
+	.content {
+		margin-top: 20px;
+		padding: 8px 50px;
+		text-align: justify;
+		font-size: 18px;
+		width: 50%;
+	}
+	#features {
+		padding: 30px 0px;
+		list-style: none;
+		font-size: 19px;
+	}
+	/* Media Query for screens up to 768px */
+	@media (max-width: 768px) {
+		.home-text {
+			width: 100%;
+		}
+		section {
+			padding: 0px 20px;
+		}
+		.img-container {
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+			margin-top: 20px;
+		}
+		.content {
+			width: 100%;
+			padding: 8px 20px;
+			font-size: 16px;
+		}
+		.heading {
+			font-size: 40px;
+			text-align: center;
+		}
+		.image-container {
+			width: 100%;
+		}
 	}
 }
 

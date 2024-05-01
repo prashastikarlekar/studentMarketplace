@@ -20,7 +20,7 @@ const Home = () => {
 			<Navbar navlist={nav} />
 			<section>
 				<div className='img-container'>
-					<div style={{ width: "50%" }}>
+					<div className='home-text'>
 						<p className='heading'>
 							Your Campus, Your Marketplace: Shop, Sell, Connect
 						</p>
@@ -29,7 +29,7 @@ const Home = () => {
 						</p>
 					</div>
 
-					<div style={{ width: "50%" }}>
+					<div className='image-container'>
 						<img src={home} alt='Home' />
 					</div>
 				</div>
